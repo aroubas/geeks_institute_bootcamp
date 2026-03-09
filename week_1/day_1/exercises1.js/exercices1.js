@@ -1,6 +1,5 @@
 
       const people = ["Greg", "Mary", "Devon", "James"];
-      console.log(people);
 
       /*Write code to remove “Greg” from the people array. */
       people.shift();
