@@ -26,4 +26,7 @@ function myBill(){
   }
   return totalprice;
 }
-console.log("the total price is :" +myBill());
+console.log("the total price is :" + myBill());
+
+
+
