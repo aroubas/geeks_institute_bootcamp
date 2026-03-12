@@ -30,4 +30,4 @@ if(lastPerson){
 const richardItem=firstList.querySelectorAll("li")[1];
 richardItem.style.border = "3px solid green";
 
-document.body.style.fontSize = "20px";
+document.body.style.fontSize = "20px-";
