@@ -16,3 +16,8 @@ getBoldItems();
   item.style.color = 'black';
 });
 }
+
+const paragraph = document.querySelector('p');
+
+paragraph.addEventListener('mouseover', highlight);
+paragraph.addEventListener('mouseout', returnItemsToDefault);
