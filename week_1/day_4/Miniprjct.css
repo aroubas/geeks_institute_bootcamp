@@ -1,0 +1,48 @@
+body, html { height: 100%; margin: 0; }
+
+.app-container {
+    display: flex;
+    gap: 5px;
+    padding: 5px;
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: grey;
+    align-items: flex-start;
+}
+
+.sidebar { display: flex; flex-direction: column; gap: 10px;flex-shrink: 0;}
+
+
+.palette { 
+    display: grid; 
+    grid-template-columns: repeat(3, 50px); 
+    gap: 5px; 
+  
+}
+.color-btn { width: 50px; height:120px; cursor: pointer; border: 1px solid #000; }
+
+.canvas { 
+    display: grid; 
+    /* Force columns and rows to be equal size */
+    grid-template-columns: repeat(auto-fill, minmax(20px, 1fr));
+    /* This ensures new rows are added automatically and keep their shape */
+    grid-auto-rows: 1fr; 
+    
+    flex-grow: 1;
+    border: 2px solid #333;
+    background-color: white;
+    overflow: hidden; 
+    height: 100%;
+}
+
+.cell { 
+    border: 1px solid #eee; 
+    background-color: white; 
+    cursor: pointer; 
+    /* This ensures the cell aspect ratio stays 1:1 */
+  
+}
+
+.Clear-button {width: 155px; border-radius: 10px;
+    height: 100px; cursor: pointer; }
+    
