@@ -1,0 +1,70 @@
+body {
+    /* 1. The Image */
+    background-image: url('https://wallpapercave.com/wp/wp2880399.jpg');
+
+    /* 2. The Size: This is the most important rule. 
+       'cover' stretches the image to fill every corner 
+       without losing its proportions. */
+    background-size: cover;
+
+    /* 3. The Position: Keeps the center of the photo 
+       in the center of the screen. */
+    background-position: center;
+
+    /* 4. Fix it: Stops the background from scrolling 
+       if your page gets long. */
+    background-attachment: fixed;
+
+    /* 5. Fill the screen */
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.app-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows buttons to wrap to a new line if needed */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 15px; /* Space between the drum pads */
+}
+.Btn {
+    background: rgba(94, 95, 92, 0.6); /* Semi-transparent black */
+    border: 3px solid rgb(242, 246, 246);
+    border-radius: 8px;
+    padding: 20px;
+    width: 100px;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    transition: all 0.07s ease; /* Critical for the "snap" back animation */
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+    transition: all 0.07s ease; /* This tells the browser HOW to animate the change */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgb(164, 230, 12);
+}
+.Btn:hover {
+    border-color: #ffc600;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+
+/* This is your custom class */
+.playing {
+    transform: scale(1.1);       /* Makes it pop */
+    border-color: #ffc600;      /* Bright yellow border */
+    box-shadow: 0 0 15px #ffc600; /* Neon glow effect */
+    background: rgba(255, 198, 0, 0.3) 
+}
+.Btn span {
+    font-size: 2.5rem;
+    display: block;
+}
