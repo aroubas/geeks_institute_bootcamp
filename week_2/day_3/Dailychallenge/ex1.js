@@ -1,19 +1,14 @@
-class Video{
-  constructor(title,uploader,time){
+class Video {
+  constructor(title, uploader, time) {
     this.title = title;
     this.uploader = uploader;
     this.time = time;
   }
-  watch(){
-    console.log (`${this.uploader} watched all ${this.time} minute of ${this.title}`)
+
+  watch() {
+    console.log(`${this.uploader} watched all ${this.time} minutes of ${this.title}`);
   }
 }
-
-const newVideo = new Video("The dark knight","Mehdi",180);
-newVideo.watch();
-
-const video2 = new Video("inception","yassin",300);
-video2.watch();
 
 const library = [
   new Video("The Dark Knight", "Mehdi", 180),
@@ -23,9 +18,4 @@ const library = [
   new Video("Memento", "Leonard", 113)
 ];
 
-const videoInstances = library.map(data => {
-  return new Video(data.title, data.uploader, data.time);
-});
-
-videoInstances.forEach(vid => vid.watch());
-
+library.forEach(vid => vid.watch());
