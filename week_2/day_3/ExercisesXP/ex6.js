@@ -32,4 +32,4 @@ class Mammal extends Animal{
   }
 }
 
-const farmerCow = new Mammal("Lily", "cow", "brown and white");
+const farmerCow = new Mammal("Lily", "cow", "brown and White");
