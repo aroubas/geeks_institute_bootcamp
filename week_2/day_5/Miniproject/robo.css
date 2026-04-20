@@ -1,4 +1,4 @@
-/* Main Background with Circuit Pattern */
+
 body {
     background-color: #1a237e;
     background-image: url('https://github.com/devtlv/studentsGitHub/blob/master/JS/Week%204/Day5/Mini%20Projects/Mini%20Project%201%20(Robots)/circuit-pattern.png?raw=true');
@@ -9,7 +9,7 @@ body {
 }
 
 header {
-    background-color: #cbd0cc; /* Bright green header */
+    background-color: #cbd0cc; 
     padding: 30px 10px;
     text-align: center;
     border-bottom: 4px solid #1a237e;
@@ -33,7 +33,7 @@ header {
     font-size: 1rem;
 }
 
-/* Card Grid Layout */
+
 .card-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -43,7 +43,7 @@ header {
     margin: 0 auto;
 }
 
-/* Robot Cards with Card Pattern */
+
 .card {
     background-color: #47cdc0;
     background-image: url('https://github.com/devtlv/studentsGitHub/blob/master/JS/Week%204/Day5/Mini%20Projects/Mini%20Project%201%20(Robots)/card-pattern.png?raw=true');

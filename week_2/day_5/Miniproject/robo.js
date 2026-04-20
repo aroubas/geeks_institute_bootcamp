@@ -33,5 +33,5 @@ searchBox.addEventListener('input', (e) => {
     displayRobots(filtered);
 });
 
-// Start the app
+
 displayRobots(robots);
